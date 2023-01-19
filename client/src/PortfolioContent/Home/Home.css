@@ -1,0 +1,7 @@
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 670px;
+  background-image: url(../../Tools/Home/bg.jpg);
+}
