@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import './App.css';
-import Home from './PortfolioContent/Home/Home';
+import React, { Component } from "react";
+import "./App.css";
+import PortfolioContent from "./PortfolioContent/PortfolioContent";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home/>
+        <PortfolioContent />
       </div>
     );
   }
