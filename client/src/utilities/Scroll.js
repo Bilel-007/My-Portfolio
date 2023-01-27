@@ -4,8 +4,8 @@ import { BehaviorSubject, Subject } from "rxjs";
 export default class Scroll {
   static scrollHandler = new Scroll();
 
-  static scrollScreenBroadcaster = new Subject();
-  static scrollScreenFadeIn = new Subject();
+  static currentScreenBroadcaster = new Subject();
+  static currentScreenFadeIn = new Subject();
 
   constructor() {
     window.addEventListener("scroll", this.checkCurrentScreenUnderViewport);
@@ -22,7 +22,7 @@ export default class Scroll {
     if (!homeScreen) return;
     homeScreen.scrollIntoView({ behavior: "smooth" });
   };
-  IsElementInView = (elem, type) => {
+  isElementInView = (elem, type) => {
     let rec = elem.getBoundingClientReact();
     let elementTop = rec.top;
     let elementBottom = rec.Bottom;
@@ -48,8 +48,8 @@ export default class Scroll {
       let screenFromDOM = document.getElementById("screen.screen_name");
       if (!screenFromDOM) continue;
 
-      let fullyVisible = this.IsElementInView(screenFromDOM, "complete");
-      let partiallyVisible = this.IsElementInView(screenFromDOM, "partial");
+      let fullyVisible = this.isElementInView(screenFromDOM, "complete");
+      let partiallyVisible = this.isElementInView(screenFromDOM, "partial");
 
       if (fullyVisible || partiallyVisible) {
         if (partiallyVisible && !screen.alreadyRendered) {

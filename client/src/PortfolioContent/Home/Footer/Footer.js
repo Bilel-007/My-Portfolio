@@ -1,5 +1,5 @@
 import React from "react";
-import shape from "../../Tools/Home/shape-bg.png"
+import shape from "../../../Tools/Home/shape-bg.png"
 import "./Footer.css";
 
 export default function Footer() {
