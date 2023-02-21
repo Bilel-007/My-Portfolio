@@ -9,7 +9,7 @@ export default function ScreenHeading(props) {
       </div>
       {props.subHeading ? (
         <div className="screen-sub-heading">
-          <span>{props.subheading}</span>
+          <span>{props.subHeading}</span>
         </div>
       ) : (
         <div></div>

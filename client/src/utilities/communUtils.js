@@ -1,6 +1,5 @@
+import AboutMe from "../PortfolioContent/AboutMe/AboutMe";
 import Home from "../PortfolioContent/Home/Home";
-
-
 
 //We gonna put all our components in an array of objects:
 
@@ -9,8 +8,11 @@ export const TOTAL_SCREENS = [
     screen_name: "Home",
     component: Home,
   },
+  {
+    screen_name: "AboutMe",
+    component: AboutMe,
+  },
 ];
-
 
 //we gonna get the index of the screen component needed:
 

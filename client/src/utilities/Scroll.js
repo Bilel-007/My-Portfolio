@@ -3,8 +3,7 @@ import { BehaviorSubject, Subject } from "rxjs";
 
 export default class Scroll {
   static scrollHandler = new Scroll();
-
-  static currentScreenBroadcaster = new Subject();
+  static currentScreenBroadCaster = new Subject();
   static currentScreenFadeIn = new Subject();
 
   constructor() {
@@ -60,7 +59,7 @@ export default class Scroll {
           break;
         }
         if (fullyVisible) {
-          Scroll.currentScreenBroadcast.next({
+          Scroll.currentScreenBroadCast.next({
             screenInView: screen.screen_name,
           });
           break;

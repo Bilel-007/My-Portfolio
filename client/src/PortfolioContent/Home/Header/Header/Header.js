@@ -12,14 +12,14 @@ export default function Header() {
   const [selectedScreen, setSelectedScreen] = useState(0);
   const [showHeaderOptions, setShowHeaderOptions] = useState(false);
 
-  const updateCurrentScrenn = (currentScreen) => {
+  const updateCurrentScreen = (currentScreen) => {
     if (!currentScreen || !currentScreen.screenInView) return;
     let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
     if (screenIndex < 0) return;
   };
 
-  let currentScreenSubscription = Scroll.currentScreenBroadcaster.subscribe(
-    updateCurrentScrenn
+  let currentScreenSubscription = Scroll.currentScreenBroadCaster.subscribe(
+    updateCurrentScreen
   );
 
   const getHeaderOptions = () => {
@@ -36,10 +36,10 @@ export default function Header() {
 
   const getHeaderOptionsClass = (index) => {
     let classes = "header-option";
-    if (index < TOTAL_SCREENS.length - 1) classes += "header-option-seperator";
+    if (index < TOTAL_SCREENS.length - 1) classes += " header-option-seperator";
 
-    if (selectedScreen === index) classes += "selected-header-option";
-    return;
+    if (selectedScreen === index) classes += " selected-header-option";
+    return classes;
   };
 
   const switchScreen = (index, screen) => {
