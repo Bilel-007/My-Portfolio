@@ -14,7 +14,7 @@ export default function AboutMe(props) {
   );
   const SCREEN_CONSTANTS = {
     description:
-      "Pariatur cillum non velit do magna sint consectetur. Cillum ea cupidatat velit quis ea eiusmod nulla exercitation nostrud consectetur nulla ad. Ad eiusmod quis voluptate ut nostrud laborum irure consequat qui dolor fugiat. Deserunt veniam ullamco officia ut cillum eu sint. Incididunt elit laboris magna minim esse excepteur eiusmod ea sunt.",
+      "A highly skilled Fullstack Web Developer and DevOps Engineer with expertise in ReactJS, NodeJS, and AWS. As a web developer, I have a passion for designing and creating responsive web applications that are visually appealing and user-friendly. I am also experienced in implementing DevOps practices and managing AWS infrastructure. Throughout my career, I have successfully solved complex problems and delivered high-quality results. I am always eager to learn new technologies and improve my skills, and I am committed to staying up-to-date with the latest trends and best practices in the field. With strong communication skills and a collaborative mindset, I am ready to take on new challenges and contribute to a dynamic team.",
     highlights: {
       bullets: [
         "FullStack web development",
@@ -23,6 +23,9 @@ export default function AboutMe(props) {
         "Redux for State Management",
         "Building REST APIs",
         "Managing databases",
+        "DevOps Engineering",
+        "CI/CD Pipeline Management",
+        "AWS Cloud Services"
       ],
       heading: "Here are a few highlights:",
     },

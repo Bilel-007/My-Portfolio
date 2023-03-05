@@ -1,5 +1,6 @@
 import AboutMe from "../PortfolioContent/AboutMe/AboutMe";
 import Home from "../PortfolioContent/Home/Home";
+import Resume from "../PortfolioContent/Resume/Resume";
 
 //We gonna put all our components in an array of objects:
 
@@ -11,6 +12,10 @@ export const TOTAL_SCREENS = [
   {
     screen_name: "AboutMe",
     component: AboutMe,
+  },
+  {
+    screen_name: "Resume",
+    component: Resume,
   },
 ];
 
